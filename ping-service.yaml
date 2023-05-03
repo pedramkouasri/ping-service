@@ -17,5 +17,6 @@ spec:
       containers:
         - name: app
           image: pedramkousari/ping-service
-          ports:
-            - containerPort: 80
+          env:
+            - name: PING_URLS
+              value: https://google.com
